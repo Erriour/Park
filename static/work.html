@@ -36,6 +36,17 @@
 <div class="photoconsurs">
     <div class="container">
         <h2>Работы фотоконкурса</h2>
+        <div class="filters">
+            <div class="fils">
+                Сортировать по:
+                <a href="#">Дате</a>
+                <a href="#" class="active">Лайкам</a>
+                <a href="#">Рандому</a>
+            </div>
+            <div class="add">
+                <a href="#add" class="add-btn">Добавить фото</a>
+            </div>
+        </div>
         <div class="photos">
             <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
             <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
@@ -135,6 +146,26 @@
                         <div class="com-body">Белка</div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="remodal" data-remodal-id="add" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc" style="padding-bottom: 10px;">
+    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+    <div class="window-content">
+        <div class="comments">
+            <div class="addcomment addphoto">
+                <h3>Добавить фото на конкурс</h3>
+                <form method="POST">
+                    <input class="file" type="file" name="file" />
+                    <div class="flex-inputs">
+                        <input type="text" name="name" placeholder="Ваше имя" />
+                        <input type="email" name="email" placeholder="Ваша почта" />
+                        <input type="submit" style="margin-bottom: 10px;" class="submit-btn" value="Отправить"/>
+                    </div>
+                </form>
             </div>
 
         </div>
