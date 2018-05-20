@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сайт парка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex-center">
+                <a href="/" class="logo">Усадебный сад</a>
+                <ul class="mainmenu">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/programme">Афиша</a></li>
+                    <li><a href="/konkurs">Конкурс</a></li>
+                    <li><a href="/about">О парке</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slide">
+                <div class="leaves"></div>
+                <div class="flex flex-slide">
+                    <div class="text">
+                        <span>Фотоконкурс</span>
+                        <span>Наш парк - наше богатство</span>
+                    </div>
+                    <div class="right-img">
+                        <div class="card"><div class="photo" style="background: url(./img/bg.jpg) no-repeat;"></div></div>
+                        <div class="card"><div class="photo" style="background: url(./img/bg.jpg) no-repeat;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photoconsurs">
+        <div class="container">
+            <h2>Работы фотоконкурса</h2>
+            <div class="photos">
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like active">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <div class="card"><a href="#modal" class="photo" style="background: url(./img/bg.jpg) no-repeat;"></a><a class="like">118</a></div>
+                <a href="/work.html" class="morecards">
+                    <span>+</span>
+                    <span>Смотреть все работы</span>
+                    <span>Всего 59 фотографи</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weather">
+        <div class="container">
+            <div class="leftTitle">Сегодня в парке</div>
+            <div class="rightTitle flex-weather">
+                <span class="status sun"></span>
+                <span class="weather-info">
+                    <span>+19</span>
+                    <span>Солнечно</span>
+                    <span>16:46, Ярославль</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <h2>Новости</h2>
+            <div class="news-blocks">
+                <a href="/news" class="news-block">
+                    <span class="img" style="background-image: url(./img/belka.jpg)"></span>
+                    <span>Белки в нашем парке</span>
+                    <span class="time">15 мая, 15:46</span>
+                </a>
+                <a href="/news" class="news-block">
+                    <span class="img" style="background-image: url(./img/belka.jpg)"></span>
+                    <span>Белки в нашем парке</span>
+                    <span class="time">15 мая, 15:46</span>
+                </a>
+                <div class="news-sliced">
+                    <a href="/news" class="news-block-sliced">
+                        <span class="img" style="background-image: url(./img/belka.jpg)"></span>
+                        <div>
+                            <span>Белки в нашем парке</span>
+                            <span class="time">15 мая, 15:46</span>
+                        </div>
+                    </a>
+                    <a href="/allnews" class="news-block-sliced">
+                        <span class="img" style="background-image: url(./img/belka.jpg)"></span>
+                        <div>
+                            <span>Белки в нашем парке</span>
+                            <span class="time">15 мая, 15:46</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="copy">
+                <a href="/" class="footer-logo"></a>
+                <span>2018 © Site.Ru</span>
+            </div>
+            <div class="schs">
+                <div class="sch1">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div class="window-content">
+            <div class="win-photo">
+                <img src="./img/belka.jpg" alt="Заголовок" />
+            </div>
+            <div class="subtitle">
+                <div class="left-inf">
+                    <div class="ava">И</div>
+                    <div class="win-info">
+                        Иван Иванов
+                        <span>Сегодня, 12:32</span>
+                    </div>
+                </div>
+                <div class="right-inf">
+                    <a class="like">118</a>
+                </div>
+            </div>
+
+            <div class="comments">
+                <div class="addcomment">
+                    <h3>Добавить комментарий</h3>
+                    <form method="POST">
+                        <textarea name="comment"></textarea>
+                        <div class="flex-inputs">
+                            <input type="text" name="name" placeholder="Ваше имя" />
+                            <input type="email" name="email" placeholder="Ваша почта" />
+                            <input type="submit" class="submit-btn" value="Отправить"/>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="all-comments">
+                    <div class="comment-block" id="comment-1">
+                        <div class="ava" style="background: #dc8383;">В</div>
+                        <div class="com-content">
+                            <div class="com-info">Василий Пупкин <span>Сегодня, 23:59</span></div>
+                            <div class="com-body">О, белка</div>
+                        </div>
+                    </div>
+                    <div class="comment-block" id="comment-2">
+                        <div class="ava">И</div>
+                        <div class="com-content">
+                            <div class="com-info"><span class="author-label">Автор</span> Иван Иванов <span>Сегодня, 23:59</span></div>
+                            <div class="com-body">Белка</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/remodal.min.js"></script>
+    <script src="./js/cli.js"></script>
+</body>
+</html>
