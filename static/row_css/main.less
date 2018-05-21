@@ -7,7 +7,7 @@
 @green-hover: #1d79e0;
 
 @title-font: "columbina";
-@subtitle-font: "koliko";
+@subtitle-font: "NotoSans";
 @text-font: "Calibri";
 
 body {
@@ -19,6 +19,14 @@ body {
 .reset();
 
 @font-face {
+  font-family: @subtitle-font;
+  src: url('../fonts/notosans/NotoSansRegular.eot');
+  src: local('☺'), url('../fonts/notosans/NotoSansRegular.woff') format('woff'), url('../fonts/notosans/NotoSansRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: @title-font;
   src: url('../fonts/columbina/columbina.eot');
   src: local('☺'), url('../fonts/columbina/columbina.woff') format('woff'), url('../fonts/columbina/columbina.ttf') format('truetype'), url('../fonts/columbina/columbina.svg') format('svg');
@@ -26,13 +34,13 @@ body {
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: @subtitle-font;
   src: url('../fonts/koliko/koliko.eot');
   src: local('☺'), url('../fonts/koliko/koliko.woff') format('woff'), url('../fonts/koliko/koliko.ttf') format('truetype'), url('../fonts/koliko/koliko.svg') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 
 .container {
   .wrapper();
@@ -93,9 +101,9 @@ header {
       }
 
       a {
-        font-family: "koliko", sans-serif;
+        font-family: @subtitle-font, sans-serif;
         text-decoration: none;
-        font-size: 14pt;
+        font-size: 12pt;
         color: #248100;
         padding: 14px;
         transition: 0.2s ease;
@@ -187,7 +195,7 @@ header {
 
     .text {
       span:first-child {
-        font-family: koliko,sans-serif;
+        font-family: @subtitle-font,sans-serif;
         font-size: 24pt;
         color: #fff;
         display: block;
@@ -253,10 +261,10 @@ header {
       background: #277b26;
       padding: 20px;
       box-sizing: border-box;
-      font-family: "koliko", sans-serif;
+      font-family: @subtitle-font, sans-serif;
       color: #fff;
       text-decoration: none;
-      font-size: 31pt;
+      font-size: 22pt;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -326,7 +334,7 @@ header {
 .weather {
   background: url(../img/weather/sun.jpg) center;
   background-size: cover;
-  font-family: "koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
   color: #fff;
   text-shadow: 0 0 9px #23232396;
   margin-top: 30px;
@@ -345,6 +353,7 @@ header {
     .flex-weather {
       flex-direction: row-reverse;
       display: flex;
+      align-items: center;
     }
 
     .status.sun {
@@ -400,7 +409,7 @@ header {
       background: #725d3e;
       padding: 30px;
       box-sizing: border-box;
-      font-family: "koliko", sans-serif;
+      font-family: @subtitle-font, sans-serif;
       text-decoration: none;
       display: flex;
       flex-direction: column;
@@ -420,7 +429,7 @@ header {
 
       span {
         color: #fff;
-        font-size: 29pt;
+        font-size: 23pt;
         line-height: 34px;
         position: relative;
 
@@ -458,7 +467,7 @@ header {
         background: #725d3e;
         padding: 30px;
         box-sizing: border-box;
-        font-family: "koliko", sans-serif;
+        font-family: @subtitle-font, sans-serif;
         text-decoration: none;
         display: flex;
         flex-direction: row;
@@ -497,7 +506,7 @@ header {
 
           & > span {
             color: #fff;
-            font-size: 25pt;
+            font-size: 20pt;
             line-height: 34px;
             position: relative;
           }
@@ -568,7 +577,7 @@ footer {
 
 .moreworks {
   background: #256d34;
-  font-family:  "koliko", sans-serif;
+  font-family:  @subtitle-font, sans-serif;
   font-size:  19pt;
   color: #fff;
   text-align: center;
@@ -586,7 +595,7 @@ footer {
 .like {
   z-index: 6;
   position: relative;
-  font-family: "koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
   font-size: 15pt;
   padding: 4px 16px;
   float: right;
@@ -654,7 +663,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-family: "koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
   font-size: 14pt;
 
   span {
@@ -702,7 +711,7 @@ footer {
 }
 
 h3 {
-  font-family: "Koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
   text-align: left;
   font-size: 14pt;
 }
@@ -728,11 +737,10 @@ input[type="text"], input[type="email"] {
 input.submit-btn {
   border: none;
   background: #287b26;
-  font-family: "Koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
   color: #fff;
   width: 170px;
   font-size: 13pt;
-  letter-spacing: 0.8px;
   cursor: pointer;
   transition: 0.2s ease;
 
@@ -769,7 +777,7 @@ input.submit-btn {
 }
 
 .com-info {
-  font-family: "koliko", sans-serif;
+  font-family: @subtitle-font, sans-serif;
 
   span:last-child {
     font-family: "Calibri", sans-serif;
@@ -804,7 +812,7 @@ input.submit-btn {
 
   .fils {
     color: #333;
-    font-family: "koliko", sans-serif;
+    font-family: @subtitle-font, sans-serif;
 
     a {
       margin-left:  10px;
@@ -828,8 +836,8 @@ input.submit-btn {
 
   .add-btn {
     background: #256d34;
-    font-family: koliko,sans-serif;
-    font-size: 14pt;
+    font-family: @subtitle-font,sans-serif;
+    font-size: 12pt;
     color: #fff;
     text-decoration: none;
     text-align: center;
