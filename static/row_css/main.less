@@ -332,13 +332,14 @@ header {
 }
 
 .weather {
-  background: url(../img/weather/sun.jpg) center;
-  background-size: cover;
-  font-family: @subtitle-font, sans-serif;
-  color: #fff;
-  text-shadow: 0 0 9px #23232396;
-  margin-top: 30px;
-  padding: 30px;
+    background: url(../img/weather/sun.jpg) center/cover;
+    font-family: NotoSans,sans-serif;
+    color: #fff;
+    text-shadow: 0 0 9px #23232396;
+    margin-top: 30px;
+    padding: 30px;
+    height: 100%;
+    position: relative;
 
   .container {
     display: flex;
@@ -682,6 +683,7 @@ footer {
 
 .win-photo img {
   max-width: 630px;
+  width: 100%;
 }
 
 .addcomment {
@@ -862,4 +864,176 @@ input.file {
   border: none;
   margin-top: -20px;
   padding-bottom: 22px;
+}
+
+@media (max-width: 1280px) {
+  .news .news-blocks .news-block {
+    width: 100%;
+    height: 185px;
+    background: #725d3e;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: NotoSans,sans-serif;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .news .news-blocks .news-block span.img {
+    height: inherit;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin: -30px;
+    width: 75%;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+
+  .news .news-blocks .news-block span.img:before {
+    content: "";
+    background: -webkit-linear-gradient(right,#725d3e 0,transparent 102%);
+    background: linear-gradient(270deg,#725d3e 0,transparent 102%);
+    width: 101%;
+    height: inherit;
+    display: block;
+  }
+
+  .news .news-blocks .news-sliced {
+    width: 100%;
+    margin: 0 10px;
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .news .news-blocks .news-sliced .news-block-sliced {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .flex-center {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container .schs .sch1 {flex-direction: row;}
+
+  footer .container .schs .sch1 > * {
+    margin: 0 9px;
+  }
+
+  .flex-inputs {
+    flex-direction: column;
+  }
+
+  .flex-inputs input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .flex-inputs input[type="text"], .flex-inputs input[type="email"] {
+    width: 93.5%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container .logo {
+    width: 100%;
+    background-position: center 0;
+    background-size: cover;
+  }
+
+  header ul.mainmenu {flex-wrap: wrap;justify-content: center;}
+
+  header ul.mainmenu li:before {
+    display: none;
+  }
+
+  .weather .container {
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+  }
+
+  .weather .container .leftTitle {
+    margin-bottom: 20px;
+  }
+
+  .slider .flex-slide .right-img {
+    transform: rotate(65deg);
+    margin-top: 161px;
+  }
+
+  .slider .flex-slide {
+    flex-direction: column;
+  }
+
+  footer .container .footer-logo {
+    width: 100%;
+    background-size: cover;
+    background-position: center -47px;
+  }
+
+  .copy{
+    width: 100%
+  }
+
+  .subtitle {
+    flex-direction: column;
+  }
+
+  .subtitle {
+    flex-direction: column;
+  }
+
+  .comment-block .ava {
+    display: none;
+  }
+
+
+  .slider {
+    display: none;
+  }
+
+  .weather:before {
+    content:  "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .weather {
+    overflow: hidden;
+  }
+}
+
+.static img {
+  margin: 15px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.left-simg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
